@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+.yeseva-one{
+  font-family: "Yeseva One", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffe6f0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 30px;
+    color: #ff3399;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    border: 2px dashed #ff99cc;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff66a3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+#yesButton{
+    margin-left: 15px;
+}
+#avoidButton {
+    position: absolute;
+    transition: all 0.1s ease;
+}
+
+.heart {
+    position: absolute;
+    font-size: 40px;
+    animation: fly 1s linear forwards;
+    color: red;
+    pointer-events: none;
+}
+
+@keyframes fly {
+    to {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+}
+
+#loveGif {
+    margin-top: 20px;
+    width: 200px;
+    display: none;
+}
